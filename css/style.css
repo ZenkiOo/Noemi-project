@@ -168,5 +168,25 @@ a img {
     width: 407px;
     padding-left: 120px;
     padding-right: 15px;
-    background-color: #3DA9EA;
+    /* background-color: #333; */
+}
+.side-block-title {
+    text-align: center;
+    position: relative;
+    padding-bottom: 50px;
+}
+/* .recent-main-link {
+    position: relative;
+    display: block;
+} */
+.side-block-title::before {
+    content: "";
+    width: 65px;
+    height: 3px;
+    background-color: #E1D9BD;
+    position: absolute;
+    top: 40px;
+}
+.recent-img {
+    float: left;
 }
