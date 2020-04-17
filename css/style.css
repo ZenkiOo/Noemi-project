@@ -52,7 +52,7 @@ a img {
     text-align: center;
     position: relative;
     z-index: 2;
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 
@@ -90,15 +90,15 @@ a img {
 }
 .main {
     display: flex;
-    /* justify-content: center; */
-    width: 1170px;
+    width: 1200px;
     margin: 0 auto;
-    padding: 75px 15px 15px 15px;
+    padding: 75px 15px 0 15px;
+    background-color: #888888;
 }
 .content {
     display: flex;
     flex-direction: column;
-    width: 778px;
+    background-color: #999999;
 }
 .article {
     display: block;
@@ -166,12 +166,12 @@ a img {
     line-height: 22px;
 }
 .side-bar {
-    width: 407px;
+    width: 270px;
     height: 100%;
-    padding-left: 120px;
-    padding-right: 15px;
+    margin-left: 120px;
+    /* padding-right: 15px; */
     margin-top: -7px;
-    /* background-color: #333; */
+    background-color: #333;
 }
 .side-bar-item:nth-child(n+2) {
     margin-top: 60px;
@@ -308,7 +308,7 @@ a img {
 }
 .socials {
     margin-top: 70px;
-    width: 1140px;
+    width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
     display: flex;
