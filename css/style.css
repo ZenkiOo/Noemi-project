@@ -62,7 +62,7 @@ a img {
     align-items: center;
 }
 .logo {
-    height: 41px;
+    /* height: 41px; */
     margin-top: 16px;
 }
 .nav-list {
@@ -113,7 +113,6 @@ a img {
     float: left;
 }
 .article-tags {
-    /* margin-top: -32px; */
     display: flex;
     list-style: none;
 }
@@ -159,24 +158,20 @@ a img {
 }
 .article-footer {
     margin-top: 33px;
-    font-size: 15px;
-    line-height: 22px;
-    color: #0f0d0e;
 }
 .article-text {
     font-size: 15px;
     line-height: 22px;
+    color: #0f0d0e;
 }
 .side-bar {
     width: 270px;
     height: 100%;
     margin-left: 120px;
-    /* padding-right: 15px; */
-    /* margin-top: -11px; */
     /* background-color: rgba(51, 51, 51, 0.589); */
 }
 .side-bar-item:nth-child(n+2) {
-    margin-top: 55px;
+    margin-top: 60px;
 }
 .recent-items {
     display: flex;
@@ -188,7 +183,7 @@ a img {
 .side-block-title {
     text-align: center;
     position: relative;
-    margin-bottom: 45px;
+    /* margin-bottom: 45px; */
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
@@ -205,6 +200,9 @@ a img {
     bottom: 0;
     left: 0;
     margin: 0 auto;
+}
+.recent-title {
+    margin-bottom: 40px;
 }
 .recent-main-link {
     color: #0f0d0e;
@@ -229,6 +227,7 @@ a img {
 }
 .search {
     display: flex;
+    margin-top: 40px;
 }
 .search-field {
     width: 220px;
@@ -257,6 +256,9 @@ a img {
     background-color: #F4F7F6;
     font-family: inherit;
 }
+.newsletter-title {
+    margin-bottom: 35px;
+}
 .subscribe-button {
     margin-top: 17px;
     width: 270px;
@@ -268,6 +270,9 @@ a img {
     font-family: inherit;
     font-size: 14px;
     font-weight: bold;
+}
+.tags-title {
+    margin-bottom: 35px;
 }
 .tag-list {
     display: flex;
@@ -286,10 +291,10 @@ a img {
     text-transform: uppercase;
 }
 .categories-title {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .categories-item {
-    padding: 15px 3px;
+    padding: 14px 3px;
     border-bottom: 2px solid #eeeeee;
 }
 .categories-link {
@@ -310,9 +315,7 @@ a img {
     margin: 0 auto;
     margin-top: 70px;
     width: 1200px;
-    padding: 0 15px;
-    
-    display: flex;
+    padding: 0 15px;display: flex;
     /* justify-content: center; */
     background-color: #F4F7F6;
 }
