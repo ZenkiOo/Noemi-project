@@ -17,7 +17,6 @@
 }
 body {
     background-color: #fff;
-    color: #D8D8D8;
     font-family: OpenSans;
     line-height: 1;
 }
@@ -34,7 +33,6 @@ a img {
     background-size: cover;
     background-color: #000000;
     position: relative;
-    /* min-height: 432px; */
 }
 .header::after {
     content: "";
@@ -52,18 +50,12 @@ a img {
     position: relative;
     z-index: 2;
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-
+    padding: 15px 15px 0 15px;
 }
 .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.logo {
-    /* height: 41px; */
-    margin-top: 16px;
 }
 .nav-list {
     display: flex;
@@ -71,19 +63,16 @@ a img {
 }
 .nav-link {
     font-size: 13px;
-    line-height: 36px;
     color: #fff;
     text-transform: uppercase;
 }
-.nav-list-item {
-    margin-top: 15px;
-}
 .nav-list-item:nth-child(n+2){
-    padding-left: 37px;
+    margin-left: 37px;
 }
 .wellcome {
-    margin-top: 104px;
+    margin: 104px auto 0 auto;
     padding-bottom: 125px;
+    max-width: 730px;
     font-size: 45px;
     font-weight: bold;
     line-height: 75px;
@@ -95,22 +84,19 @@ a img {
     width: 1200px;
     margin: 0 auto;
     padding: 65px 15px 0 15px;
-    /* background-color: #888888; */
 }
 .content {
     display: flex;
     flex-direction: column;
-    /* background-color: #999999; */
 }
 .article {
-    display: block;
+    display: flex;
+}
+.article-block {
+    margin-left: 30px;
 }
 .article:nth-child(n+2) {
-    margin-top: 60px;
-}
-.article-img {
-    margin-right: 30px;
-    float: left;
+    margin-top: 58px;
 }
 .article-tags {
     display: flex;
@@ -122,7 +108,6 @@ a img {
 .article-tag-link {
     font-size: 14px;
     font-weight: bold;
-    /* line-height: 40px; */
     text-transform: uppercase;
     color: #b59f5b;
 
@@ -139,21 +124,23 @@ a img {
 }
 .article-description {
     margin-top: 16px;
+    margin-left: 3px;
     font-size: 12px;
     line-height: 40px;
-}
-.desc-item:nth-child(n+2) {
-    padding-left: 10px;
 }
 .article-date {
     font-size: 12px;
     line-height: 40px;
     color: #888888;
 }
+.author-block {
+    display: inline;
+    font-style: normal;
+    margin-left: 10px;
+}
 .article-author {
     font-size: 12px;
     font-weight: bold;
-    line-height: 40px;
     color: #000;
 }
 .article-footer {
@@ -168,26 +155,24 @@ a img {
     width: 270px;
     height: 100%;
     margin-left: 120px;
-    /* background-color: rgba(51, 51, 51, 0.589); */
 }
 .side-bar-item:nth-child(n+2) {
-    margin-top: 60px;
+    margin-top: 59px;
 }
 .recent-items {
     display: flex;
     flex-direction: column;
 }
 .recent-item:nth-child(n+2){
-    margin-top: 22px;
+    margin-top: 20px;
 }
 .side-block-title {
     text-align: center;
     position: relative;
-    /* margin-bottom: 45px; */
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;
-    /* line-height: 30px; */
+    color: #0f0d0e;
 }
 .side-block-title::before {
     content: "";
@@ -201,27 +186,29 @@ a img {
     left: 0;
     margin: 0 auto;
 }
+.recent-item {
+    display: flex;
+}
+.recent-item-text {
+    margin-left: 18px;
+    margin-top: -3px;
+}
 .recent-title {
-    margin-bottom: 40px;
-}
-.recent-main-link {
-    color: #0f0d0e;
-}
-.recent-img {
-    float: left;
-    margin-right: 18px;
+    margin-bottom: 42px;
 }
 .recent-date {
+
     display: inline-block;
     font-size: 12px;
-    /* line-height: 40px; */
     color: #000000;
     opacity: 0.5;
 }
 .recent-link {
+    margin-top: 3px;
+    display: block;
     font-size: 14px;
     font-weight: bold;
-    /* line-height: 18px; */
+    line-height: 18px;
     color: #000;
     text-transform: uppercase;
 }
@@ -233,6 +220,7 @@ a img {
     width: 220px;
     height: 50px;
     padding-left: 20px;
+    padding-right: 20px;
     border: 0;
     background-color: #F4F7F6;
     font-family: inherit;
@@ -247,11 +235,13 @@ a img {
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center center;
+    cursor: pointer;
 }
 .mail-field {
     width: 270px;
     height: 50px;
     padding-left: 20px;
+    padding-right: 20px;
     border: 0;
     background-color: #F4F7F6;
     font-family: inherit;
@@ -270,6 +260,7 @@ a img {
     font-family: inherit;
     font-size: 14px;
     font-weight: bold;
+    cursor: pointer;
 }
 .tags-title {
     margin-bottom: 35px;
@@ -277,13 +268,13 @@ a img {
 .tag-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -5px;
+    list-style: none;
 }
 .tag-item {
     display: block;
-    margin-top: 6px;
+    margin-top: 5px;
     margin-left: 5px;
-    padding: 5px 12px;
+    padding: 6px 12px;
     border: 3px solid #EEEEEE;
     font-size: 12px;
     font-weight: bold;
@@ -293,12 +284,14 @@ a img {
 .categories-title {
     margin-bottom: 30px;
 }
+.categories-items {
+    list-style: none;
+}
 .categories-item {
     padding: 14px 3px;
     border-bottom: 2px solid #eeeeee;
 }
 .categories-link {
-    /* display: block; */
     color: #000;
     font-size: 14px;
     font-weight: bold;
@@ -319,22 +312,43 @@ a img {
     justify-content: center;
     align-items: center;
     background-color: #F4F7F6;
+    list-style: none;
 }
 .social-item {
     padding: 25px 14px;
 }
-.social-img {
+.social-img-link{
+    display: block;
     width: 20px;
+    height: 20px;
+    color: #000;
+    background-position: center center;
+    background-size: 20px;
 }
-.social-text {
+.twitter {
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg);
+}
+.pinterest {
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg);
+}
+.facebook {
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg);
+}
+.instagram {
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg);
+}
+.tumblr {
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+}
+.hidden-text {
     display: block;
     position: absolute;
     clip: rect(1px 1px 1px 1px);
     height: 1px;
     width: 1px;
-}
-.twitter-img {
-    width: 25px;
 }
 .copywrite {
     display: block;
