@@ -65,6 +65,20 @@ a img {
     font-size: 13px;
     color: #fff;
     text-transform: uppercase;
+    position: relative;
+}
+.nav-link::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    top: 22px;
+    left: 0;
+    background: #fff;
+    transition: 0.4s;
+}
+.nav-list-item:hover .nav-link::before{
+    width: 100%;
 }
 .nav-list-item:nth-child(n+2){
     margin-left: 37px;
@@ -121,6 +135,9 @@ a img {
     font-weight: bold;
     text-transform: uppercase;
     color: #0f0d0e;
+}
+.article-title-link:hover, .recent-link:hover, .categories-link:hover,.article-author:hover {
+    text-shadow: #BBBBBB 2px 2px 3px;
 }
 .article-description {
     margin-top: 16px;
@@ -280,6 +297,12 @@ a img {
     font-weight: bold;
     color: #000;
     text-transform: uppercase;
+    transition: 0.3s;
+}
+.tag-item:hover {
+    color: #fff;
+    background-color: #b59f5b;
+    border: 3px solid #fff;
 }
 .categories-title {
     margin-bottom: 30px;
