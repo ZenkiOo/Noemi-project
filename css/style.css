@@ -19,7 +19,7 @@ body {
     background-color: #fff;
     font-family: OpenSans;
     line-height: 1;
-    min-width: 1200px;
+    /* min-width: 1200px; */
 }
 a {
     text-decoration: none;
